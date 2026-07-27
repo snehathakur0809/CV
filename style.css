@@ -1,0 +1,321 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f3f3f3;
+    color:#222;
+    padding:40px;
+}
+
+.resume{
+
+    width:210mm;
+    min-height:297mm;
+    margin:auto;
+    background:#fff;
+    padding:45px 55px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+header{
+    text-align:center;
+    margin-bottom:18px;
+}
+
+header h1{
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:-1px;
+    color:#111;
+}
+
+.subtitle{
+    font-size:17px;
+    color:#555;
+    margin-top:6px;
+}
+
+.contact{
+    margin-top:18px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+    font-size:14px;
+}
+
+.contact a{
+
+    color:#222;
+
+    text-decoration:none;
+
+}
+
+.contact a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ==========================
+   DIVIDER
+========================== */
+
+hr{
+
+    border:none;
+
+    border-top:1px solid #d9d9d9;
+
+    margin:28px 0;
+
+}
+
+/* ==========================
+   SECTION
+========================== */
+
+section{
+
+    margin-bottom:10px;
+
+}
+
+section h2{
+
+    font-size:15px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:18px;
+
+    color:#111;
+
+}
+
+/* ==========================
+   ENTRY
+========================== */
+
+.item{
+
+    margin-bottom:22px;
+
+}
+
+.heading{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.heading h3{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#111;
+
+}
+
+.heading span{
+
+    font-size:14px;
+
+    color:#666;
+
+    white-space:nowrap;
+
+}
+
+.item p{
+
+    margin-top:5px;
+
+    font-size:14px;
+
+    color:#444;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+   SKILLS
+========================== */
+
+.skills{
+
+    font-size:14px;
+
+    line-height:2;
+
+    color:#333;
+
+}
+
+/* ==========================
+   PROJECTS
+========================== */
+
+.project{
+
+    margin-bottom:24px;
+
+}
+
+.project h3{
+
+    font-size:16px;
+
+    margin-bottom:10px;
+
+}
+
+.project ul{
+
+    padding-left:20px;
+
+}
+
+.project li{
+
+    margin-bottom:8px;
+
+    line-height:1.7;
+
+    font-size:14px;
+
+}
+
+/* ==========================
+   LISTS
+========================== */
+
+ul{
+
+    padding-left:20px;
+
+}
+
+li{
+
+    margin-bottom:6px;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+   LINKS
+========================== */
+
+a{
+
+    color:#111;
+
+}
+
+a:hover{
+
+    color:#000;
+
+}
+
+/* ==========================
+   PRINT
+========================== */
+
+@page{
+
+    size:A4;
+
+    margin:14mm;
+
+}
+
+@media print{
+
+body{
+
+    background:#fff;
+
+    padding:0;
+
+}
+
+.resume{
+
+    width:100%;
+
+    min-height:auto;
+
+    padding:0;
+
+    box-shadow:none;
+
+}
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+body{
+
+    padding:15px;
+
+}
+
+.resume{
+
+    width:100%;
+
+    padding:30px;
+
+}
+
+.heading{
+
+    flex-direction:column;
+
+    gap:3px;
+
+}
+
+.contact{
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+header h1{
+
+    font-size:34px;
+
+}
+
+}
